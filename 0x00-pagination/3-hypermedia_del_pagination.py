@@ -2,8 +2,7 @@
 """Deletion-resilient hypermedia pagination
 """
 import csv
-
-# import math
+import math
 from typing import Dict, List
 
 
