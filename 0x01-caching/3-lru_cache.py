@@ -5,8 +5,8 @@ from collections import OrderedDict
 from base_caching import BaseCaching
 
 
-class LIFOCache(BaseCaching):
-    """Last-In First Out cache implementation."""
+class LRUCache(BaseCaching):
+    """LRU cache implementation."""
 
     def __init__(self) -> None:
         """Initialize"""
