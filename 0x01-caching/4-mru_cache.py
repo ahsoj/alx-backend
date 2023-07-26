@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""LRU module"""
+"""MRU module"""
 
 from collections import OrderedDict
 from base_caching import BaseCaching
