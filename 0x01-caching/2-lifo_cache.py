@@ -3,10 +3,10 @@
 
 from collections import OrderedDict
 
-from base_caching import BaseConfig
+from base_caching import BaseCaching
 
 
-class LIFOCache(BaseConfig):
+class LIFOCache(BaseCaching):
     """Last-In First Out cache implementation."""
 
     def __init__(self) -> None:
@@ -19,7 +19,7 @@ class LIFOCache(BaseConfig):
         if key is None or item is None:
             return
         if (key not in self.cache_data) and (
-            len(self.cache_data) + 1 > BaseConfig.MAX_ITEMS
+            len(self.cache_data) + 1 > BaseCaching.MAX_ITEMS
         ):
             last_key, _ = self.cache_data.popitem(True)
             print("DISCARD:", last_key)

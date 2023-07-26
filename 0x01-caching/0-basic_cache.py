@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """BasicCache module"""
 
-from base_caching import BaseConfig
+from base_caching import BaseCaching
 
 
-class BasicCache(BaseConfig):
+class BasicCache(BaseCaching):
     """Class for basic caching functionality."""
 
     def put(self, key, item):

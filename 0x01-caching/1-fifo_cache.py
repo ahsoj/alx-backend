@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """FIFOCache module"""
 
-from base_caching import BaseConfig
+from base_caching import BaseCaching
 
 
-class FIFOCache(BaseConfig):
+class FIFOCache(BaseCaching):
     """fifo caching"""
 
     def __init__(self) -> None:
@@ -15,7 +15,7 @@ class FIFOCache(BaseConfig):
         """update an item from the cache."""
         if not (key is None or item is None):
             self.cache_data[key] = item
-            if len(self.cache_data) > BaseConfig.MAX_ITEMS:
+            if len(self.cache_data) > BaseCaching.MAX_ITEMS:
                 first_key, _ = self.cache_data.popitem(False)
                 print("DISCARD:", first_key)
 

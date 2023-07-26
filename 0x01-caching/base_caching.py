@@ -2,7 +2,7 @@
 """BaseCaching module"""
 
 
-class BaseConfig:
+class BaseCaching:
     """
     BaseCaching defined:
      - constant of your caching system
