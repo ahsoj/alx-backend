@@ -2,6 +2,7 @@
 """LIFO module"""
 
 from collections import OrderedDict
+
 from base_caching import BaseConfig
 
 
@@ -9,6 +10,7 @@ class LIFOCache(BaseConfig):
     """Last-In First Out cache implementation."""
 
     def __init__(self) -> None:
+        """Initialize"""
         super().__init__()
         self.cache_data = OrderedDict()
 
